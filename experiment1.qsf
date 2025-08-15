@@ -1,0 +1,3101 @@
+{
+  "SurveyEntry": {
+    "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+    "SurveyName": "Thesis - Trusting the Machine",
+    "SurveyDescription": null,
+    "SurveyOwnerID": "UR_PLACEHOLDER",
+    "SurveyBrandID": "brand-placeholder",
+    "DivisionID": null,
+    "SurveyLanguage": "EN",
+    "SurveyActiveResponseSet": "RS_PLACEHOLDER",
+    "SurveyStatus": "Inactive",
+    "SurveyStartDate": "0000-00-00 00:00:00",
+    "SurveyExpirationDate": "0000-00-00 00:00:00",
+    "SurveyCreationDate": "2024-10-14 10:59:45",
+    "CreatorID": "UR_PLACEHOLDER",
+    "LastModified": "2025-01-18 17:59:16",
+    "LastAccessed": "0000-00-00 00:00:00",
+    "LastActivated": "2024-10-15 00:00:01",
+    "Deleted": null
+  },
+  "SurveyElements": [
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "FL",
+      "PrimaryAttribute": "Survey Flow",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Root",
+        "FlowID": "FL_1",
+        "Flow": [
+          {
+            "Type": "EmbeddedData",
+            "FlowID": "FL_170",
+            "EmbeddedData": [
+              {
+                "Description": "id",
+                "Type": "Recipient",
+                "Field": "id",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false
+              },
+              {
+                "Description": "Condition",
+                "Type": "Recipient",
+                "Field": "Condition",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false
+              },
+              {
+                "Description": "completion_code",
+                "Type": "Recipient",
+                "Field": "completion_code",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false
+              }
+            ]
+          },
+          {
+            "Type": "Standard",
+            "ID": "BL_9uWLppdd1yWWKi2",
+            "FlowID": "FL_3",
+            "Autofill": []
+          },
+          {
+            "Type": "Branch",
+            "FlowID": "FL_167",
+            "Description": "New Branch",
+            "BranchLogic": {
+              "0": {
+                "0": {
+                  "LogicType": "Question",
+                  "QuestionID": "QID3",
+                  "QuestionIsInLoop": "no",
+                  "ChoiceLocator": "q:\/\/QID3\/SelectableChoice\/2",
+                  "Operator": "Selected",
+                  "QuestionIDFromLocator": "QID3",
+                  "LeftOperand": "q:\/\/QID3\/SelectableChoice\/2",
+                  "Type": "Expression",
+                  "Description": "<span class=\"ConjDesc\">If<\/span> <span class=\"QuestionDesc\">Study Title: Perception in Chat-based Conversation Faculty Supervisor: Clara Colombatto, PhD, Dep...<\/span> <span class=\"LeftOpDesc\">I do not agree to participate.<\/span> <span class=\"OpDesc\">Is Selected<\/span> "
+                },
+                "Type": "If"
+              },
+              "Type": "BooleanExpression"
+            },
+            "Flow": [
+              {
+                "Type": "EndSurvey",
+                "FlowID": "FL_169",
+                "EndingType": "Default",
+                "Options": {
+                  "Advanced": "",
+                  "SurveyTermination": "DisplayMessage",
+                  "EOSMessageLibrary": "UR_0pQ3ZnovsdqkKfs",
+                  "EOSMessage": "MS_t7EFB3LEimErZVM"
+                }
+              }
+            ]
+          },
+          {
+            "Type": "BlockRandomizer",
+            "FlowID": "FL_12",
+            "SubSet": 1,
+            "EvenPresentation": true,
+            "Flow": [
+              {
+                "Type": "EmbeddedData",
+                "FlowID": "FL_175",
+                "EmbeddedData": [
+                  {
+                    "Description": "Condition",
+                    "Type": "Custom",
+                    "Field": "Condition",
+                    "VariableType": "String",
+                    "DataVisibility": [],
+                    "AnalyzeText": false,
+                    "Value": "Low"
+                  }
+                ]
+              },
+              {
+                "Type": "EmbeddedData",
+                "FlowID": "FL_176",
+                "EmbeddedData": [
+                  {
+                    "Description": "Condition",
+                    "Type": "Custom",
+                    "Field": "Condition",
+                    "VariableType": "String",
+                    "DataVisibility": [],
+                    "AnalyzeText": false,
+                    "Value": "Medium"
+                  }
+                ]
+              },
+              {
+                "Type": "EmbeddedData",
+                "FlowID": "FL_177",
+                "EmbeddedData": [
+                  {
+                    "Description": "Condition",
+                    "Type": "Custom",
+                    "Field": "Condition",
+                    "VariableType": "String",
+                    "DataVisibility": [],
+                    "AnalyzeText": false,
+                    "Value": "High"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "Standard",
+            "ID": "BL_eVgFl1Zqd4GmMNo",
+            "FlowID": "FL_137",
+            "Autofill": []
+          },
+          {
+            "Type": "Standard",
+            "ID": "BL_aXgo3sEo7Esntlk",
+            "FlowID": "FL_36",
+            "Autofill": []
+          },
+          {
+            "Type": "Branch",
+            "FlowID": "FL_180",
+            "Description": "New Branch",
+            "BranchLogic": {
+              "0": {
+                "0": {
+                  "LogicType": "EmbeddedField",
+                  "LeftOperand": "Condition",
+                  "Operator": "EqualTo",
+                  "RightOperand": "Low",
+                  "_HiddenExpression": false,
+                  "Type": "Expression",
+                  "Description": "<span class=\"ConjDesc\">If<\/span> <span class=\"LeftOpDesc\">Condition<\/span> <span class=\"OpDesc\">Is Equal to<\/span> <span class=\"RightOpDesc\"> Low <\/span>"
+                },
+                "Type": "If"
+              },
+              "Type": "BooleanExpression"
+            },
+            "Flow": [
+              {
+                "Type": "Branch",
+                "FlowID": "FL_179",
+                "Description": "New Branch",
+                "BranchLogic": {
+                  "0": {
+                    "0": {
+                      "LogicType": "Question",
+                      "QuestionID": "QID12",
+                      "QuestionIsInLoop": "no",
+                      "ChoiceLocator": "q:\/\/QID12\/SelectableChoice\/1",
+                      "Operator": "NotSelected",
+                      "QuestionIDFromLocator": "QID12",
+                      "LeftOperand": "q:\/\/QID12\/SelectableChoice\/1",
+                      "Type": "Expression",
+                      "Description": "<span class=\"ConjDesc\">If<\/span> <span class=\"QuestionDesc\">What was the author?<\/span> <span class=\"LeftOpDesc\">A generative AI agent<\/span> <span class=\"OpDesc\">Is Not Selected<\/span> "
+                    },
+                    "1": {
+                      "LogicType": "Question",
+                      "QuestionID": "QID9",
+                      "QuestionIsInLoop": "no",
+                      "ChoiceLocator": "q:\/\/QID9\/SelectableChoice\/6",
+                      "Operator": "NotSelected",
+                      "QuestionIDFromLocator": "QID9",
+                      "LeftOperand": "q:\/\/QID9\/SelectableChoice\/6",
+                      "Type": "Expression",
+                      "Description": "<span class=\"ConjDesc\">Or<\/span> <span class=\"QuestionDesc\">Which of these was the name of the author for the blog post you read?<\/span> <span class=\"LeftOpDesc\">Science Communication AI<\/span> <span class=\"OpDesc\">Is Not Selected<\/span> ",
+                      "Conjuction": "Or"
+                    },
+                    "2": {
+                      "LogicType": "Question",
+                      "QuestionID": "QID10",
+                      "QuestionIsInLoop": "no",
+                      "ChoiceLocator": "q:\/\/QID10\/SelectableChoice\/1",
+                      "Operator": "NotSelected",
+                      "QuestionIDFromLocator": "QID10",
+                      "LeftOperand": "q:\/\/QID10\/SelectableChoice\/1",
+                      "Type": "Expression",
+                      "Description": "<span class=\"ConjDesc\">Or<\/span> <span class=\"QuestionDesc\">What was the blog post that you read about?<\/span> <span class=\"LeftOpDesc\">A new medication<\/span> <span class=\"OpDesc\">Is Not Selected<\/span> ",
+                      "Conjuction": "Or"
+                    },
+                    "Type": "If"
+                  },
+                  "Type": "BooleanExpression"
+                },
+                "Flow": [
+                  {
+                    "Type": "Standard",
+                    "ID": "BL_80QUOh8wCXNi8Mm",
+                    "FlowID": "FL_182",
+                    "Autofill": []
+                  },
+                  {
+                    "Type": "EmbeddedData",
+                    "FlowID": "FL_196",
+                    "EmbeddedData": []
+                  },
+                  {
+                    "Type": "Block",
+                    "ID": "BL_aXgo3sEo7Esntlk",
+                    "FlowID": "FL_181",
+                    "Autofill": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "Branch",
+            "FlowID": "FL_183",
+            "Description": "New Branch",
+            "BranchLogic": {
+              "0": {
+                "0": {
+                  "LogicType": "EmbeddedField",
+                  "LeftOperand": "Condition",
+                  "Operator": "EqualTo",
+                  "RightOperand": "Medium",
+                  "_HiddenExpression": false,
+                  "Type": "Expression",
+                  "Description": "<span class=\"ConjDesc\">If<\/span> <span class=\"LeftOpDesc\">Condition<\/span> <span class=\"OpDesc\">Is Equal to<\/span> <span class=\"RightOpDesc\"> Medium <\/span>"
+                },
+                "Type": "If"
+              },
+              "Type": "BooleanExpression"
+            },
+            "Flow": [
+              {
+                "Type": "Branch",
+                "FlowID": "FL_184",
+                "Description": "New Branch",
+                "BranchLogic": {
+                  "0": {
+                    "0": {
+                      "LogicType": "Question",
+                      "QuestionID": "QID12",
+                      "QuestionIsInLoop": "no",
+                      "ChoiceLocator": "q:\/\/QID12\/SelectableChoice\/1",
+                      "Operator": "NotSelected",
+                      "QuestionIDFromLocator": "QID12",
+                      "LeftOperand": "q:\/\/QID12\/SelectableChoice\/1",
+                      "Type": "Expression",
+                      "Description": "<span class=\"ConjDesc\">If<\/span> <span class=\"QuestionDesc\">What was the author?<\/span> <span class=\"LeftOpDesc\">A generative AI agent<\/span> <span class=\"OpDesc\">Is Not Selected<\/span> "
+                    },
+                    "1": {
+                      "LogicType": "Question",
+                      "QuestionID": "QID9",
+                      "QuestionIsInLoop": "no",
+                      "ChoiceLocator": "q:\/\/QID9\/SelectableChoice\/1",
+                      "Operator": "NotSelected",
+                      "QuestionIDFromLocator": "QID9",
+                      "LeftOperand": "q:\/\/QID9\/SelectableChoice\/1",
+                      "Type": "Expression",
+                      "Description": "<span class=\"ConjDesc\">Or<\/span> <span class=\"QuestionDesc\">Which of these was the name of the author for the blog post you read?<\/span> <span class=\"LeftOpDesc\">Simone the Science Synthesizer<\/span> <span class=\"OpDesc\">Is Not Selected<\/span> ",
+                      "Conjuction": "Or"
+                    },
+                    "2": {
+                      "LogicType": "Question",
+                      "QuestionID": "QID10",
+                      "QuestionIsInLoop": "no",
+                      "ChoiceLocator": "q:\/\/QID10\/SelectableChoice\/1",
+                      "Operator": "NotSelected",
+                      "QuestionIDFromLocator": "QID10",
+                      "LeftOperand": "q:\/\/QID10\/SelectableChoice\/1",
+                      "Type": "Expression",
+                      "Description": "<span class=\"ConjDesc\">Or<\/span> <span class=\"QuestionDesc\">What was the blog post that you read about?<\/span> <span class=\"LeftOpDesc\">A new medication<\/span> <span class=\"OpDesc\">Is Not Selected<\/span> ",
+                      "Conjuction": "Or"
+                    },
+                    "Type": "If"
+                  },
+                  "Type": "BooleanExpression"
+                },
+                "Flow": [
+                  {
+                    "Type": "Standard",
+                    "ID": "BL_80QUOh8wCXNi8Mm",
+                    "FlowID": "FL_185",
+                    "Autofill": []
+                  },
+                  {
+                    "Type": "EmbeddedData",
+                    "FlowID": "FL_197",
+                    "EmbeddedData": []
+                  },
+                  {
+                    "Type": "Block",
+                    "ID": "BL_aXgo3sEo7Esntlk",
+                    "FlowID": "FL_186",
+                    "Autofill": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "Branch",
+            "FlowID": "FL_187",
+            "Description": "New Branch",
+            "BranchLogic": {
+              "0": {
+                "0": {
+                  "LogicType": "EmbeddedField",
+                  "LeftOperand": "Condition",
+                  "Operator": "EqualTo",
+                  "RightOperand": "High",
+                  "_HiddenExpression": false,
+                  "Type": "Expression",
+                  "Description": "<span class=\"ConjDesc\">If<\/span> <span class=\"LeftOpDesc\">Condition<\/span> <span class=\"OpDesc\">Is Equal to<\/span> <span class=\"RightOpDesc\"> High <\/span>"
+                },
+                "Type": "If"
+              },
+              "Type": "BooleanExpression"
+            },
+            "Flow": [
+              {
+                "Type": "Branch",
+                "FlowID": "FL_188",
+                "Description": "New Branch",
+                "BranchLogic": {
+                  "0": {
+                    "0": {
+                      "LogicType": "Question",
+                      "QuestionID": "QID12",
+                      "QuestionIsInLoop": "no",
+                      "ChoiceLocator": "q:\/\/QID12\/SelectableChoice\/2",
+                      "Operator": "NotSelected",
+                      "QuestionIDFromLocator": "QID12",
+                      "LeftOperand": "q:\/\/QID12\/SelectableChoice\/2",
+                      "Type": "Expression",
+                      "Description": "<span class=\"ConjDesc\">If<\/span> <span class=\"QuestionDesc\">What was the author?<\/span> <span class=\"LeftOpDesc\">A human expert<\/span> <span class=\"OpDesc\">Is Not Selected<\/span> "
+                    },
+                    "1": {
+                      "LogicType": "Question",
+                      "QuestionID": "QID9",
+                      "QuestionIsInLoop": "no",
+                      "ChoiceLocator": "q:\/\/QID9\/SelectableChoice\/2",
+                      "Operator": "NotSelected",
+                      "QuestionIDFromLocator": "QID9",
+                      "LeftOperand": "q:\/\/QID9\/SelectableChoice\/2",
+                      "Type": "Expression",
+                      "Description": "<span class=\"ConjDesc\">Or<\/span> <span class=\"QuestionDesc\">Which of these was the name of the author for the blog post you read?<\/span> <span class=\"LeftOpDesc\">Dr. Simone Tran<\/span> <span class=\"OpDesc\">Is Not Selected<\/span> ",
+                      "Conjuction": "Or"
+                    },
+                    "2": {
+                      "LogicType": "Question",
+                      "QuestionID": "QID10",
+                      "QuestionIsInLoop": "no",
+                      "ChoiceLocator": "q:\/\/QID10\/SelectableChoice\/1",
+                      "Operator": "NotSelected",
+                      "QuestionIDFromLocator": "QID10",
+                      "LeftOperand": "q:\/\/QID10\/SelectableChoice\/1",
+                      "Type": "Expression",
+                      "Description": "<span class=\"ConjDesc\">Or<\/span> <span class=\"QuestionDesc\">What was the blog post that you read about?<\/span> <span class=\"LeftOpDesc\">A new medication<\/span> <span class=\"OpDesc\">Is Not Selected<\/span> ",
+                      "Conjuction": "Or"
+                    },
+                    "Type": "If"
+                  },
+                  "Type": "BooleanExpression"
+                },
+                "Flow": [
+                  {
+                    "Type": "Standard",
+                    "ID": "BL_80QUOh8wCXNi8Mm",
+                    "FlowID": "FL_189",
+                    "Autofill": []
+                  },
+                  {
+                    "Type": "EmbeddedData",
+                    "FlowID": "FL_198",
+                    "EmbeddedData": []
+                  },
+                  {
+                    "Type": "Block",
+                    "ID": "BL_aXgo3sEo7Esntlk",
+                    "FlowID": "FL_190",
+                    "Autofill": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "BlockRandomizer",
+            "FlowID": "FL_200",
+            "SubSet": 2,
+            "EvenPresentation": true,
+            "Flow": [
+              {
+                "Type": "Standard",
+                "ID": "BL_5yGSCdzIKgTl090",
+                "FlowID": "FL_178",
+                "Autofill": []
+              },
+              {
+                "Type": "Standard",
+                "ID": "BL_9N6lM4uzTqIj6Oq",
+                "FlowID": "FL_193",
+                "Autofill": []
+              }
+            ]
+          },
+          {
+            "Type": "Standard",
+            "ID": "BL_cUwxQ3bgzC4bCZw",
+            "FlowID": "FL_38",
+            "Autofill": []
+          },
+          {
+            "Type": "Standard",
+            "ID": "BL_ehfl83Y2p950iYC",
+            "FlowID": "FL_39",
+            "Autofill": []
+          },
+          {
+            "Type": "Standard",
+            "ID": "BL_6DL7TMJRiQMncTs",
+            "FlowID": "FL_165",
+            "Autofill": []
+          },
+          {
+            "Type": "Standard",
+            "ID": "BL_5AA2vwe3aGF2JD0",
+            "FlowID": "FL_40",
+            "Autofill": []
+          },
+          {
+            "Type": "Standard",
+            "ID": "BL_bCJ56P1gyIlFo4m",
+            "FlowID": "FL_201",
+            "Autofill": []
+          },
+          {
+            "Type": "EndSurvey",
+            "FlowID": "FL_15",
+            "EndingType": "Advanced",
+            "Options": {
+              "Advanced": "true",
+              "SurveyTermination": "DefaultMessage",
+              "EOSRedirectURL": "REPLACE_WITH_SONA_URL?survey_code=${e:\/\/Field\/id}"
+            }
+          }
+        ],
+        "Properties": {
+          "Count": 201
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "STAT",
+      "PrimaryAttribute": "Survey Statistics",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "MobileCompatible": false,
+        "ID": "Survey Statistics"
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SO",
+      "PrimaryAttribute": "Survey Options",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "BackButton": "false",
+        "SaveAndContinue": "true",
+        "SurveyProtection": "PublicSurvey",
+        "BallotBoxStuffingPrevention": "false",
+        "NoIndex": "Yes",
+        "SecureResponseFiles": "true",
+        "SurveyExpiration": "None",
+        "SurveyTermination": "DisplayMessage",
+        "Header": "<link href=\"https:\/\/uncanny-mind-study-b6394b.gitlab.io\/chat.css\" rel=\"stylesheet\" type=\"text\/css\" \/><script src=\"https:\/\/uncanny-mind-study-b6394b.gitlab.io\/functions.js\"><\/script>",
+        "Footer": "",
+        "ProgressBarDisplay": "NoText",
+        "PartialData": "+1 day",
+        "ValidationMessage": null,
+        "PreviousButton": " \u2190 ",
+        "NextButton": " \u2192 ",
+        "SurveyTitle": "Trusting Communicated Information",
+        "SkinLibrary": "uwaterloo",
+        "SkinType": "templated",
+        "Skin": {
+          "brandingId": null,
+          "templateId": "*base",
+          "overrides": null
+        },
+        "NewScoring": 1,
+        "SurveyMetaDescription": "Survey about trust in written content.",
+        "CustomStyles": {
+          "customCSS": "\/* Content container *\/\n.trust-content-container {\n    font-family: 'Open Sans', sans-serif;\n    max-width: 850px;\n    margin: 50px auto;\n    background-color: #fff;\n    padding: 30px;\n    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);\n    border-radius: 12px;\n    transition: transform 0.3s ease;\n}\n\n.trust-content-container:hover {\n    transform: translateY(-5px);\n}\n\n\/* Avatar section *\/\n.avatar {\n    display: flex;\n    justify-content: center;\n    margin-bottom: 20px;\n}\n\n.avatar img {\n    width: 120px;\n    height: 120px;\n    border-radius: 50%;\n    object-fit: cover;\n    border: 3px solid #007bff;\n    transition: border 0.3s ease;\n}\n\n.avatar img:hover {\n    border: 3px solid #0056b3;\n}\n\n\/* Author description section *\/\n.author-description {\n    text-align: center;\n    margin-bottom: 40px;\n}\n\n.author-description h2 {\n    margin: 10px 0;\n    font-size: 24px;\n    color: #007bff;\n}\n\n.author-description p {\n    font-size: 16px;\n    color: #555;\n    line-height: 1.8;\n    padding: 0 20px;\n}\n\n\/* Blog post content section *\/\n.blog-post-content h1 {\n    font-size: 32px;\n    margin-bottom: 25px;\n    color: #333;\n    text-align: center;\n    position: relative;\n}\n\n.blog-post-content h1:after {\n    content: \"\";\n    display: block;\n    width: 60px;\n    height: 4px;\n    background-color: #007bff;\n    margin: 10px auto;\n    border-radius: 2px;\n}\n\n.blog-post-content p {\n    font-size: 18px;\n    line-height: 1.8;\n    margin-bottom: 25px;\n    color: #444;\n}\n\n.blog-post-content b {\n    color: #007bff;\n}\n\n\/* Add some spacing *\/\n.trust-content-container p {\n    margin-bottom: 1.5em;\n}"
+        },
+        "EOSMessage": "MS_t7EFB3LEimErZVM",
+        "ShowExportTags": "false",
+        "CollectGeoLocation": "false",
+        "PasswordProtection": "No",
+        "AnonymizeResponse": "Yes",
+        "RefererCheck": "No",
+        "BallotBoxStuffingPreventionBehavior": null,
+        "BallotBoxStuffingPreventionMessage": null,
+        "BallotBoxStuffingPreventionMessageLibrary": null,
+        "BallotBoxStuffingPreventionURL": null,
+        "RecaptchaV3": "true",
+        "ConfirmStart": false,
+        "AutoConfirmStart": false,
+        "RelevantID": "false",
+        "RelevantIDLockoutPeriod": "+30 days",
+        "UseCustomSurveyLinkCompletedMessage": null,
+        "SurveyLinkCompletedMessage": null,
+        "SurveyLinkCompletedMessageLibrary": null,
+        "ResponseSummary": "No",
+        "EOSMessageLibrary": "UR_0pQ3ZnovsdqkKfs",
+        "EOSRedirectURL": "REPLACE_WITH_SONA_URL?survey_code=${e:\/\/Field\/id}",
+        "EmailThankYou": "false",
+        "ThankYouEmailMessageLibrary": null,
+        "ThankYouEmailMessage": null,
+        "ValidateMessage": "false",
+        "ValidationMessageLibrary": null,
+        "InactiveSurvey": "DefaultMessage",
+        "PartialDeletion": null,
+        "PartialDataCloseAfter": "LastActivity",
+        "InactiveMessageLibrary": null,
+        "InactiveMessage": null,
+        "AvailableLanguages": {
+          "EN": []
+        },
+        "headerMid": "",
+        "ProtectSelectionIds": true,
+        "SurveyName": "Thesis - Trusting the Machine"
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SCO",
+      "PrimaryAttribute": "Scoring",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "ScoringCategories": [],
+        "ScoringCategoryGroups": [],
+        "ScoringSummaryCategory": null,
+        "ScoringSummaryAfterQuestions": 0,
+        "ScoringSummaryAfterSurvey": 0,
+        "DefaultScoringCategory": null,
+        "AutoScoringCategory": null
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "RS",
+      "PrimaryAttribute": "RS_6DawLGCL2QYbC3Y",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": null
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "PROJ",
+      "PrimaryAttribute": "CORE",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": "1.1.0",
+      "Payload": {
+        "ProjectCategory": "CORE",
+        "SchemaVersion": "1.1.0"
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "BL",
+      "PrimaryAttribute": "Survey Blocks",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "2": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "ConsentBlock",
+          "ID": "BL_9uWLppdd1yWWKi2",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID3"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Expanded"
+          }
+        },
+        "6": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "ContentBlock",
+          "ID": "BL_aXgo3sEo7Esntlk",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID49"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID50"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID51"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID83"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID9"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID12"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID10"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "Looping": "None",
+            "LoopingOptions": null
+          }
+        },
+        "8": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "ExperienceBlock",
+          "ID": "BL_cUwxQ3bgzC4bCZw",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID64"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID82"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID71"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID81"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "RandomWithXPerPage",
+            "Randomization": {
+              "Advanced": {
+                "QuestionsPerPage": 0,
+                "FixedOrder": [
+                  "QID71",
+                  "QID81",
+                  "QID82"
+                ]
+              }
+            }
+          }
+        },
+        "9": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "DemographicsBlock",
+          "ID": "BL_ehfl83Y2p950iYC",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID62"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID25"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID26"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID28"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID29"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID40"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "RandomWithXPerPage",
+            "Randomization": {
+              "Advanced": {
+                "QuestionsPerPage": 0
+              }
+            }
+          }
+        },
+        "10": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "DebriefBlock",
+          "ID": "BL_5AA2vwe3aGF2JD0",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID19"
+            }
+          ]
+        },
+        "15": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "WelcomeBlock",
+          "ID": "BL_eVgFl1Zqd4GmMNo",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID53"
+            }
+          ]
+        },
+        "19": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "SurveyCheck",
+          "ID": "BL_6DL7TMJRiQMncTs",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID65"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID66"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID68"
+            }
+          ]
+        },
+        "21": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Godspeed",
+          "ID": "BL_5yGSCdzIKgTl090",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID56"
+            }
+          ]
+        },
+        "22": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "ComprehensionCheckFailed",
+          "ID": "BL_80QUOh8wCXNi8Mm",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID73"
+            }
+          ]
+        },
+        "25": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "ContentTrust",
+          "ID": "BL_9N6lM4uzTqIj6Oq",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID74"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID76"
+            }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "RandomWithXPerPage",
+            "Randomization": {
+              "Advanced": {
+                "QuestionsPerPage": 0
+              }
+            }
+          }
+        },
+        "26": {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Completion Code",
+          "ID": "BL_bCJ56P1gyIlFo4m",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID84"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "QC",
+      "PrimaryAttribute": "Survey Question Count",
+      "SecondaryAttribute": "84",
+      "TertiaryAttribute": null,
+      "Payload": null
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID65",
+      "SecondaryAttribute": "Did any parts of this survey seem unrealistic or confusing to you, and if so, which ones?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Did any parts of this survey seem unrealistic or confusing to you, and if so, which ones?",
+        "DefaultChoices": false,
+        "DataExportTag": "Unrealistic",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Did any parts of this survey seem unrealistic or confusing to you, and if so, which ones?",
+        "Choices": {
+          "1": {
+            "Display": "No"
+          },
+          "2": {
+            "Display": "Yes",
+            "TextEntry": "true",
+            "TextEntrySize": "Large"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID65"
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID66",
+      "SecondaryAttribute": "Did you experience any technical issues or interruptions during this experiment?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Did you experience any technical issues or interruptions during this experiment?",
+        "DefaultChoices": false,
+        "DataExportTag": "TechnicalIssues",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Did you experience any technical issues or interruptions during this experiment?",
+        "Choices": {
+          "1": {
+            "Display": "No"
+          },
+          "2": {
+            "Display": "Yes"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID66"
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID51",
+      "SecondaryAttribute": "Dr. Simone Tran In a cozy office, Dr. Simone Tran, a science communication expert, sits surrounde...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<div class=\"trust-content-container\">\n<div class=\"avatar\"><img src=\"https:\/\/uwaterloo.ca1.qualtrics.com\/CP\/Graphic.php?IM=IM_7WzmDcqMHUbCIzc\" height=\"120\" alt=\"Author Avatar\"><\/div>\n\n<div class=\"author-description\">\n<h2>Dr. Simone Tran<\/h2>\n\n<p>In a cozy office, Dr. Simone Tran, a science communication expert, sits surrounded by stacks of research papers and a glowing laptop screen. With keen insight and passion, she delves into the latest studies, distilling complex data into engaging narratives. Her fingers dance across the keyboard, crafting articles that transform technical jargon into accessible, compelling stories. She pauses to consider her audience, ensuring clarity and impact in every word. Colleagues often seek her input, admiring her ability to make science resonate with the public. Dr. Tran\u2019s dedication shines through her work, bridging the gap between researchers and everyday readers.<\/p>\n<\/div>\n\n<div class=\"blog-post-content\">\n<h1>Revolutionary New Medication Shows Promising Results in Recent Study<\/h1>\n\n<p>Exciting news is emerging from the Horizon Medical Institute, where researchers have unveiled promising results for a new medication named <b>Velocerin<\/b>. This innovative drug targets inflammatory conditions such as rheumatoid arthritis and inflammatory bowel disease, showing significant potential to improve patients' lives.<\/p>\n\n<p>Velocerin works by specifically inhibiting the TNF-alpha protein, a key player in the inflammation process. Unlike traditional treatments that often cause broad, undesirable side effects, Velocerin's targeted approach allows it to reduce inflammation more effectively and with greater safety.<\/p>\n\n<p>The study involved over 1,000 participants who received either Velocerin or a placebo over six months. The results were compelling: those on Velocerin experienced a <b>60% reduction in symptoms<\/b>, compared to a <b>25% reduction<\/b> in the placebo group. Additionally, participants reported substantial improvements in their quality of life, citing reduced pain and enhanced mobility. Importantly, the drug was well-tolerated, with only mild side effects such as headaches and fatigue reported by a small number of users.<\/p>\n\n<p>For individuals living with chronic inflammatory conditions, Velocerin offers hope for a future with better symptom management and fewer side effects. While these findings are encouraging, further trials are necessary to confirm the drug's efficacy and safety on a larger scale. As research progresses, Velocerin stands out as a potential breakthrough in the treatment of inflammatory diseases, promising a brighter, healthier future for many.<\/p>\n<\/div>\n<\/div>",
+        "DefaultChoices": false,
+        "DataExportTag": "High",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Dr. Simone Tran In a cozy office, Dr. Simone Tran, a science communication expert, sits surrounde...",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID51",
+        "QuestionJS": "Qualtrics.SurveyEngine.addOnload(function()\n{\n\t\/*Place your JavaScript here to run when the page loads*\/\n\n});\n\nQualtrics.SurveyEngine.addOnReady(function()\n{\n\tlet loop_count = parseInt(\"${lm:\/\/CurrentLoopNumber}\");\n\tQualtrics.SurveyEngine.setEmbeddedData('NeitherLoop', loop_count);\n\tpauseBeforeNext(15000);\n});\n\nQualtrics.SurveyEngine.addOnUnload(function()\n{\n\t\/*Place your JavaScript here to run when the page is unloaded*\/\n\n});",
+        "DisplayLogic": {
+          "0": {
+            "0": {
+              "Description": "<span class=\"ConjDesc\">If<\/span> <span class=\"LeftOpDesc\">Condition<\/span> <span class=\"OpDesc\">Is Equal to<\/span> <span class=\"RightOpDesc\"> High <\/span>",
+              "LeftOperand": "Condition",
+              "LogicType": "EmbeddedField",
+              "Operator": "EqualTo",
+              "RightOperand": "High",
+              "Type": "Expression"
+            },
+            "Type": "If"
+          },
+          "Type": "BooleanExpression",
+          "inPage": false
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID25",
+      "SecondaryAttribute": "How do you describe yourself?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Choices": {
+          "1": {
+            "Display": "Non-binary \/ third gender"
+          },
+          "2": {
+            "Display": "Man"
+          },
+          "3": {
+            "Display": "Woman"
+          },
+          "4": {
+            "Display": "Prefer to self-describe",
+            "TextEntry": "true"
+          },
+          "5": {
+            "Display": "Prefer not to say"
+          }
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "DataExportTag": "Gender",
+        "DataVisibility": {
+          "Hidden": false,
+          "Private": false
+        },
+        "Language": [],
+        "NextAnswerId": 1,
+        "NextChoiceId": 6,
+        "QuestionDescription": "How do you describe yourself?",
+        "QuestionID": "QID25",
+        "QuestionText": "How do you describe yourself?",
+        "QuestionText_Unsafe": "",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID82",
+      "SecondaryAttribute": "How often do you consume media similar to what was presented in the blog post?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How often do you consume media similar to what was presented in the blog post?",
+        "DefaultChoices": false,
+        "DataExportTag": "ScienceContent",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How often do you consume media similar to what was presented in the blog post?",
+        "Choices": {
+          "1": {
+            "Display": "More than once a day"
+          },
+          "2": {
+            "Display": "About once a day"
+          },
+          "3": {
+            "Display": "About once a week"
+          },
+          "4": {
+            "Display": "About once every two weeks"
+          },
+          "5": {
+            "Display": "Less than once a month"
+          },
+          "6": {
+            "Display": "About once a month"
+          },
+          "7": {
+            "Display": "Rarely"
+          },
+          "8": {
+            "Display": "Never"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 9,
+        "NextAnswerId": 1,
+        "QuestionID": "QID82"
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID64",
+      "SecondaryAttribute": "How often do you use generative AI chatbots, such as ChatGPT, Claude, Gemini, Copilot, or Grok?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How often do you use generative AI chatbots, such as ChatGPT, Claude, Gemini, Copilot, or Grok?",
+        "DefaultChoices": false,
+        "DataExportTag": "AIChatbotsFrequency",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How often do you use generative AI chatbots, such as ChatGPT, Claude, Gemini, Copilot, or Grok?",
+        "Choices": {
+          "1": {
+            "Display": "More than once a day"
+          },
+          "2": {
+            "Display": "About once a day"
+          },
+          "3": {
+            "Display": "About once a week"
+          },
+          "4": {
+            "Display": "About once every two weeks"
+          },
+          "5": {
+            "Display": "Less than once a month"
+          },
+          "6": {
+            "Display": "About once a month"
+          },
+          "7": {
+            "Display": "I've only tried these a couple of times"
+          },
+          "8": {
+            "Display": "I've never used these"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 9,
+        "NextAnswerId": 1,
+        "QuestionID": "QID64"
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID62",
+      "SecondaryAttribute": "How old are you?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How old are you?",
+        "DefaultChoices": false,
+        "DataExportTag": "Age",
+        "QuestionType": "TE",
+        "Selector": "FORM",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How old are you?",
+        "Choices": {
+          "1": {
+            "Display": "Age",
+            "TextEntry": "on",
+            "TextEntryLength": "Short",
+            "TextEntryValidation": "ValidNumber"
+          }
+        },
+        "ChoiceOrder": [
+          1
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 2,
+        "NextAnswerId": 1,
+        "SearchSource": {
+          "AllowFreeResponse": "false"
+        },
+        "QuestionID": "QID62"
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID68",
+      "SecondaryAttribute": "In approximately 1 sentence, please tell us what you think this study is about.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "In approximately 1 sentence, please tell us what you think this study is about.",
+        "DefaultChoices": false,
+        "DataExportTag": "SurveyTopicCheck",
+        "QuestionType": "TE",
+        "Selector": "ML",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "InputWidth": 680,
+          "InputHeight": 29
+        },
+        "QuestionDescription": "In approximately 1 sentence, please tell us what you think this study is about.",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "SearchSource": {
+          "AllowFreeResponse": "false"
+        },
+        "QuestionID": "QID68"
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID40",
+      "SecondaryAttribute": "Level of Education completed (Canada)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "Choices": {
+          "1": {
+            "Display": "Some Primary"
+          },
+          "2": {
+            "Display": "Completed Primary"
+          },
+          "3": {
+            "Display": "Some Secondary"
+          },
+          "4": {
+            "Display": "Completed Secondary"
+          },
+          "5": {
+            "Display": "Vocational or Similar"
+          },
+          "6": {
+            "Display": "Some University but no degree"
+          },
+          "7": {
+            "Display": "University Bachelors Degree"
+          },
+          "8": {
+            "Display": "Graduate or Professional Degree (MA, MS, MBA, PhD, JD, MD, DDS etc.)"
+          },
+          "9": {
+            "Display": "Prefer not to say"
+          }
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "SpecifyLabel"
+        },
+        "DataExportTag": "Education",
+        "DataVisibility": {
+          "Hidden": false,
+          "Private": false
+        },
+        "DefaultChoices": false,
+        "Language": {
+          "DE": {
+            "QuestionText": "Was ist Ihre h\u00f6chste abgeschlossene Ausbildung?",
+            "Choices": {
+              "1": {
+                "Display": "Teilweise Grundschule"
+              },
+              "2": {
+                "Display": "Abgeschlossene Grundschulbildung"
+              },
+              "3": {
+                "Display": "Teilweise Sekundarbildung"
+              },
+              "4": {
+                "Display": "Abgeschlossene Sekundarbildung"
+              },
+              "5": {
+                "Display": "Berufsschule oder \u00e4hnliches"
+              },
+              "6": {
+                "Display": "Teilweise Universit\u00e4t, aber ohne Abschluss"
+              },
+              "7": {
+                "Display": "Universit\u00e4t, Bachelor-Abschluss"
+              },
+              "8": {
+                "Display": "Hochschul- oder Fachabschluss (MA, MS, MBA, PhD, JD, MD, DDS usw.)"
+              },
+              "9": {
+                "Display": "Keine Angabe"
+              }
+            }
+          },
+          "EN-GB": {
+            "QuestionText": "What is the highest level of education you have completed?",
+            "Choices": {
+              "1": {
+                "Display": "Some Primary"
+              },
+              "2": {
+                "Display": "Completed Primary"
+              },
+              "3": {
+                "Display": "Some Secondary"
+              },
+              "4": {
+                "Display": "Completed Secondary"
+              },
+              "5": {
+                "Display": "Vocational or Similar"
+              },
+              "6": {
+                "Display": "Some University but no degree"
+              },
+              "7": {
+                "Display": "University Bachelors Degree"
+              },
+              "8": {
+                "Display": "Graduate or Professional Degree (MA, MS, MBA, PhD, JD, MD, DDS etc.)"
+              },
+              "9": {
+                "Display": "Prefer not to say"
+              }
+            }
+          },
+          "ES": {
+            "QuestionText": "\u00bfCu\u00e1l es el nivel educativo m\u00e1s alto que ha alcanzado?",
+            "Choices": {
+              "1": {
+                "Display": "Parte de la educaci\u00f3n primaria"
+              },
+              "2": {
+                "Display": "Educaci\u00f3n primaria completada"
+              },
+              "3": {
+                "Display": "Parte de la educaci\u00f3n secundaria"
+              },
+              "4": {
+                "Display": "Educaci\u00f3n secundaria completada"
+              },
+              "5": {
+                "Display": "Formaci\u00f3n profesional o similar"
+              },
+              "6": {
+                "Display": "Algo de educaci\u00f3n universitaria, pero sin t\u00edtulo"
+              },
+              "7": {
+                "Display": "Titulaci\u00f3n universitaria"
+              },
+              "8": {
+                "Display": "Licenciatura o grado profesional (MA, MS, MBA, PhD, JD, MD, DDS etc.)"
+              },
+              "9": {
+                "Display": "Prefiero no decirlo"
+              }
+            }
+          },
+          "ES-ES": {
+            "QuestionText": "\u00bfCu\u00e1l es el mayor nivel de estudios que ha finalizado?",
+            "Choices": {
+              "1": {
+                "Display": "Algunos estudios de primaria"
+              },
+              "2": {
+                "Display": "Estudios de primaria completos"
+              },
+              "3": {
+                "Display": "Algunos estudios de secundaria"
+              },
+              "4": {
+                "Display": "Estudios de secundaria completos"
+              },
+              "5": {
+                "Display": "Formaci\u00f3n profesional o similar"
+              },
+              "6": {
+                "Display": "Algunos estudios universitarios pero sin titulaci\u00f3n"
+              },
+              "7": {
+                "Display": "Licenciatura universitaria"
+              },
+              "8": {
+                "Display": "T\u00edtulo de graduado o profesional (MA, MS, MBA, PhD, JD, MD, DDS, etc.)"
+              },
+              "9": {
+                "Display": "Prefiero no decirlo"
+              }
+            }
+          },
+          "FR": {
+            "QuestionText": "Quel est votre plus haut niveau d'\u00e9tudes\u00a0?",
+            "Choices": {
+              "1": {
+                "Display": "Enseignement primaire non complet"
+              },
+              "2": {
+                "Display": "Enseignement primaire complet"
+              },
+              "3": {
+                "Display": "Enseignement secondaire non complet"
+              },
+              "4": {
+                "Display": "Enseignement secondaire"
+              },
+              "5": {
+                "Display": "Enseignement professionnel ou similaire"
+              },
+              "6": {
+                "Display": "Enseignement universitaire, sans dipl\u00f4me"
+              },
+              "7": {
+                "Display": "Licence universitaire"
+              },
+              "8": {
+                "Display": "Master ou Doctorat (Master de lettres, Master en sciences, Master en gestion, Doctorat, Doctorat en droit, Doctorat en m\u00e9decine, Doctorat en divinit\u00e9, etc.)"
+              },
+              "9": {
+                "Display": "Ne souhaite pas r\u00e9pondre"
+              }
+            }
+          },
+          "IT": {
+            "QuestionText": "Qual \u00e8 il pi\u00f9 elevato grado di istruzione che hai completato?",
+            "Choices": {
+              "1": {
+                "Display": "Qualche anno di istruzione primaria"
+              },
+              "2": {
+                "Display": "Ho completato l'istruzione primaria"
+              },
+              "3": {
+                "Display": "Qualche anno di istruzione secondaria"
+              },
+              "4": {
+                "Display": "Ho completato l'istruzione secondaria"
+              },
+              "5": {
+                "Display": "Professionale o simile"
+              },
+              "6": {
+                "Display": "Qualche anno di universit\u00e0 ma senza laurea"
+              },
+              "7": {
+                "Display": "Laurea universitaria di primo livello"
+              },
+              "8": {
+                "Display": "Diploma di specializzazione o professionale (MA, MS, MBA, PhD, JD, MD, DDS, ecc.)"
+              },
+              "9": {
+                "Display": "Preferisco non dirlo"
+              }
+            }
+          },
+          "JA": {
+            "QuestionText": "\u6700\u7d42\u5b66\u6b74\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044\u3002",
+            "Choices": {
+              "1": {
+                "Display": "\u521d\u7b49\u6559\u80b2"
+              },
+              "2": {
+                "Display": "\u521d\u7b49\u6559\u80b2\u4fee\u4e86"
+              },
+              "3": {
+                "Display": "\u4e2d\u7b49\u6559\u80b2"
+              },
+              "4": {
+                "Display": "\u4e2d\u7b49\u6559\u80b2\u4fee\u4e86"
+              },
+              "5": {
+                "Display": "\u5c02\u9580\u5b66\u6821\u307e\u305f\u306f\u305d\u308c\u306b\u985e\u3059\u308b\u3082\u306e"
+              },
+              "6": {
+                "Display": "\u5927\u5b66\u4e2d\u9000"
+              },
+              "7": {
+                "Display": "\u5927\u5b66\u5352\u696d\uff08\u5b66\u58eb\uff09"
+              },
+              "8": {
+                "Display": "\u5927\u5b66\u9662\u5352\u3001\u307e\u305f\u306f\u5c02\u9580\u8077\u5b66\u4f4d\uff08MA\u3001MS\u3001MBA\u3001PhD\u3001JD\u3001MD\u3001DDS\u306a\u3069\uff09"
+              },
+              "9": {
+                "Display": "\u56de\u7b54\u3057\u305f\u304f\u306a\u3044"
+              }
+            }
+          },
+          "KO": {
+            "QuestionText": "\uadc0\ud558\uc758 \ucd5c\uc885 \ud559\ub825\uc740 \ubb34\uc5c7\uc785\ub2c8\uae4c?",
+            "Choices": {
+              "1": {
+                "Display": "\ucd08\ub4f1\ud559\uad50 \uc911\ud1f4"
+              },
+              "2": {
+                "Display": "\ucd08\ub4f1\ud559\uad50 \uc878\uc5c5"
+              },
+              "3": {
+                "Display": "\uc911\ud559\uad50 \uc911\ud1f4"
+              },
+              "4": {
+                "Display": "\uc911\ud559\uad50 \uc878\uc5c5"
+              },
+              "5": {
+                "Display": "\uc9c1\uc5c5 \ubc0f \uc720\uc0ac\ud55c \uad50\uc721"
+              },
+              "6": {
+                "Display": "\uc77c\ubd80 \ub300\ud559(\ud559\uc704 \uc5c6\uc74c)"
+              },
+              "7": {
+                "Display": "\ub300\ud559 \ud559\uc0ac \ud559\uc704"
+              },
+              "8": {
+                "Display": "\uc11d\ubc15\uc0ac \ud559\uc704(MA, MS, MBA, PhD, JD, MD, DDS \ub4f1)"
+              },
+              "9": {
+                "Display": "\uc5b8\uae09 \uc548 \ud568"
+              }
+            }
+          },
+          "NL": {
+            "QuestionText": "Wat is het hoogste opleidingsniveau dat u heeft afgerond?",
+            "Choices": {
+              "1": {
+                "Display": "Basisonderwijs, niet afgerond"
+              },
+              "2": {
+                "Display": "Basisonderwijs afgerond"
+              },
+              "3": {
+                "Display": "Middelbaar onderwijs, niet afgerond"
+              },
+              "4": {
+                "Display": "Middelbaar onderwijs afgerond"
+              },
+              "5": {
+                "Display": "Beroepsonderwijs of vergelijkbaar"
+              },
+              "6": {
+                "Display": "Hoger onderwijs, geen diploma"
+              },
+              "7": {
+                "Display": "Bachelordiploma"
+              },
+              "8": {
+                "Display": "Universitair diploma"
+              },
+              "9": {
+                "Display": "Ik antwoord liever niet"
+              }
+            }
+          },
+          "PT-BR": {
+            "QuestionText": "Qual \u00e9 o n\u00edvel educacional mais elevado que voc\u00ea completou?",
+            "Choices": {
+              "1": {
+                "Display": "Ensino prim\u00e1rio incompleto"
+              },
+              "2": {
+                "Display": "Ensino prim\u00e1rio completo"
+              },
+              "3": {
+                "Display": "Ensino secund\u00e1rio incompleto"
+              },
+              "4": {
+                "Display": "Ensino secund\u00e1rio completo"
+              },
+              "5": {
+                "Display": "Ensino profissionalizante ou similar"
+              },
+              "6": {
+                "Display": "N\u00edvel superior incompleto"
+              },
+              "7": {
+                "Display": "Ensino superior completo"
+              },
+              "8": {
+                "Display": "P\u00f3s-gradua\u00e7\u00e3o (MA, MS, MBA, PhD, JD, MD, DDS etc.)"
+              },
+              "9": {
+                "Display": "Prefiro n\u00e3o dizer"
+              }
+            }
+          },
+          "ZH-S": {
+            "QuestionText": "\u60a8\u7684\u6700\u9ad8\u6559\u80b2\u6c34\u5e73\u662f\u4ec0\u4e48\uff1f",
+            "Choices": {
+              "1": {
+                "Display": "\u5c0f\u5b66\u8084\u4e1a"
+              },
+              "2": {
+                "Display": "\u5b8c\u6210\u521d\u7b49\u6559\u80b2"
+              },
+              "3": {
+                "Display": "\u4e2d\u5b66\u8084\u4e1a"
+              },
+              "4": {
+                "Display": "\u5b8c\u6210\u4e2d\u7b49\u6559\u80b2"
+              },
+              "5": {
+                "Display": "\u804c\u4e1a\u5b66\u6821\u6216\u7c7b\u4f3c\u9662\u6821"
+              },
+              "6": {
+                "Display": "\u5927\u5b66\u8084\u4e1a\uff0c\u4f46\u65e0\u5b66\u4f4d"
+              },
+              "7": {
+                "Display": "\u5927\u5b66\u5b66\u58eb\u5b66\u4f4d"
+              },
+              "8": {
+                "Display": "\u7855\u58eb\u6216\u4e13\u4e1a\u5b66\u4f4d\uff08\u6587\u5b66\u7855\u58eb\u3001\u7406\u5b66\u7855\u58eb\u3001\u5de5\u5546\u7ba1\u7406\u7855\u58eb\u3001\u54f2\u5b66\u535a\u58eb\u3001\u6cd5\u5b66\u535a\u58eb\u3001\u533b\u5b66\u535a\u58eb\u3001\u7259\u5916\u79d1\u5b66\u535a\u58eb\u7b49\uff09"
+              },
+              "9": {
+                "Display": "\u4fdd\u5bc6"
+              }
+            }
+          },
+          "ZH-T": {
+            "QuestionText": "\u60a8\u5df2\u5b8c\u6210\u7684\u6700\u9ad8\u5b78\u4f4d\u6216\u6559\u80b2\u7a0b\u5ea6\u70ba\u4f55\uff1f",
+            "Choices": {
+              "1": {
+                "Display": "\u672a\u5b8c\u6210\u5c0f\u5b78\u6559\u80b2"
+              },
+              "2": {
+                "Display": "\u5c0f\u5b78\u7562\u696d"
+              },
+              "3": {
+                "Display": "\u672a\u5b8c\u6210\u4e2d\u7b49\u6559\u80b2"
+              },
+              "4": {
+                "Display": "\u4e2d\u5b78\u7562\u696d"
+              },
+              "5": {
+                "Display": "\u8077\u696d\u5b78\u6821\u6216\u540c\u7b49\u5b78\u6b77"
+              },
+              "6": {
+                "Display": "\u5927\u5b78\u8084\u696d"
+              },
+              "7": {
+                "Display": "\u5927\u5b78\u5b78\u58eb\u5b78\u4f4d"
+              },
+              "8": {
+                "Display": "\u7814\u7a76\u6240\u5b78\u4f4d (MA\u3001MS\u3001MBA\u3001PhD\u3001JD\u3001MD\u3001DDS \u7b49)"
+              },
+              "9": {
+                "Display": "\u4e0d\u9858\u900f\u9732"
+              }
+            }
+          }
+        },
+        "NextAnswerId": 1,
+        "NextChoiceId": 10,
+        "QuestionDescription": "Level of Education completed (Canada)",
+        "QuestionID": "QID40",
+        "QuestionText": "What is the highest level of education you have completed?",
+        "QuestionText_Unsafe": "",
+        "QuestionType": "MC",
+        "ReferenceQuestionConfig": {
+          "instanceOf": {
+            "id": "RQ_62GYqhJhyRcyEu5",
+            "version": "v2.0.0"
+          }
+        },
+        "SchemaConfig": {
+          "ChoiceMapping": {
+            "1": "enu:\/\/SomePrimary",
+            "2": "enu:\/\/Primary",
+            "3": "enu:\/\/SomeSecondarySchool",
+            "4": "enu:\/\/Secondary",
+            "5": "enu:\/\/VocationalOrSimilar",
+            "6": "enu:\/\/SomeUniversity",
+            "7": "enu:\/\/UniversityBachelorsDegree",
+            "8": "enu:\/\/GraduateProfessionalDegree",
+            "9": "enu:\/\/PreferNotToSay"
+          },
+          "ChoiceMappingType": "Member",
+          "ConfigVersion": "1.0.0",
+          "Reconfirm": true,
+          "URL": "ses:\/\/CanadaEducationLevel",
+          "XMDConnect": true
+        },
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID81",
+      "SecondaryAttribute": "On a scale from Strongly disagree to Strongly agree indicate how much you agree with the statemen...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "On a scale from Strongly disagree to Strongly agree indicate how much you agree with the statements below.",
+        "DefaultChoices": false,
+        "DataExportTag": "Experience",
+        "QuestionID": "QID81",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "TextPosition": "inline",
+          "ChoiceColumnWidth": 25,
+          "RepeatHeaders": "none",
+          "WhiteSpace": "OFF",
+          "MobileFirst": true
+        },
+        "QuestionDescription": "On a scale from Strongly disagree to Strongly agree indicate how much you agree with the statemen...",
+        "Choices": {
+          "1": {
+            "Display": "I intend to use a generative AI chatbot in the future."
+          },
+          "2": {
+            "Display": "I would ask a generative AI chatbot to summarize scientific information for me."
+          },
+          "3": {
+            "Display": "I would ask a generative AI chatbot to create non-scientific content for me."
+          },
+          "4": {
+            "Display": "The content I read today has changed my opinion on generative AI chatbots."
+          },
+          "5": {
+            "Display": "I am afraid of generative AI chatbots as they exist today."
+          },
+          "6": {
+            "Display": "I am afraid of the potential future of generative AI."
+          },
+          "7": {
+            "Display": "I could write content similar to the blog post I read in this study."
+          },
+          "8": {
+            "Display": "I have a strong background in science."
+          },
+          "9": {
+            "Display": "I have professional experience related to the content of the blog post in the study."
+          },
+          "10": {
+            "Display": "I have professional experience writing content."
+          },
+          "11": {
+            "Display": "I have professional experience in a communication related field."
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 12,
+        "NextAnswerId": 6,
+        "Answers": {
+          "1": {
+            "Display": "Strongly disagree"
+          },
+          "2": {
+            "Display": "Disagree"
+          },
+          "3": {
+            "Display": "Neither agree or disagree"
+          },
+          "4": {
+            "Display": "Agree"
+          },
+          "5": {
+            "Display": "Strongly agree"
+          }
+        },
+        "AnswerOrder": [
+          1,
+          2,
+          "3",
+          "4",
+          "5"
+        ],
+        "ChoiceDataExportTags": false,
+        "Randomization": {
+          "Advanced": null,
+          "TotalRandSubset": "",
+          "Type": "All"
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID49",
+      "SecondaryAttribute": "Science Communication AI In a research facility, a generative AI science communication content ge...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<div class=\"trust-content-container\">\n<div class=\"avatar\"><img alt=\"Author Avatar\" src=\"https:\/\/uwaterloo.ca1.qualtrics.com\/CP\/Graphic.php?IM=IM_0U80vnXIQn2ZPhQ\"><\/div>\n\n<div class=\"author-description\">\n<h2>Science Communication AI<\/h2>\n\n<p>In a research facility, a generative AI science communication content generator processes complex scientific data. It dissects research papers, deciphers terminology, and assembles clear, informative content. Algorithms identify key points, translate jargon into accessible language, and format information for various audiences. Each step is a calculated execution of code, ensuring precision and clarity. The AI's role is purely functional, transforming dense information into digestible formats without any semblance of understanding or emotion, a powerful tool for disseminating knowledge efficiently.<\/p>\n<\/div>\n\n<div class=\"blog-post-content\">\n<h1>Revolutionary New Medication Shows Promising Results in Recent Study<\/h1>\n\n<p>Exciting news is emerging from the Horizon Medical Institute, where researchers have unveiled promising results for a new medication named <b>Velocerin<\/b>. This innovative drug targets inflammatory conditions such as rheumatoid arthritis and inflammatory bowel disease, showing significant potential to improve patients' lives.<\/p>\n\n<p>Velocerin works by specifically inhibiting the TNF-alpha protein, a key player in the inflammation process. Unlike traditional treatments that often cause broad, undesirable side effects, Velocerin's targeted approach allows it to reduce inflammation more effectively and with greater safety.<\/p>\n\n<p>The study involved over 1,000 participants who received either Velocerin or a placebo over six months. The results were compelling: those on Velocerin experienced a <b>60% reduction in symptoms<\/b>, compared to a <b>25% reduction<\/b> in the placebo group. Additionally, participants reported substantial improvements in their quality of life, citing reduced pain and enhanced mobility. Importantly, the drug was well-tolerated, with only mild side effects such as headaches and fatigue reported by a small number of users.<\/p>\n\n<p>For individuals living with chronic inflammatory conditions, Velocerin offers hope for a future with better symptom management and fewer side effects. While these findings are encouraging, further trials are necessary to confirm the drug's efficacy and safety on a larger scale. As research progresses, Velocerin stands out as a potential breakthrough in the treatment of inflammatory diseases, promising a brighter, healthier future for many.<\/p>\n<\/div>\n<\/div>",
+        "DefaultChoices": false,
+        "DataExportTag": "LowAnthropomorphism",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Science Communication AI In a research facility, a generative AI science communication content ge...",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID49",
+        "QuestionJS": "Qualtrics.SurveyEngine.addOnload(function()\n{\n\t\/*Place your JavaScript here to run when the page loads*\/\n\n});\n\nQualtrics.SurveyEngine.addOnReady(function()\n{\n\tlet loop_count = parseInt(\"${lm:\/\/CurrentLoopNumber}\");\n\tQualtrics.SurveyEngine.setEmbeddedData('CognitiveLoop', loop_count);\n\tpauseBeforeNext(15000);\n});\n\nQualtrics.SurveyEngine.addOnUnload(function()\n{\n\t\/*Place your JavaScript here to run when the page is unloaded*\/\n\n});",
+        "DisplayLogic": {
+          "0": {
+            "0": {
+              "Description": "<span class=\"ConjDesc\">If<\/span> <span class=\"LeftOpDesc\">Condition<\/span> <span class=\"OpDesc\">Is Equal to<\/span> <span class=\"RightOpDesc\"> Low <\/span>",
+              "LeftOperand": "Condition",
+              "LogicType": "EmbeddedField",
+              "Operator": "EqualTo",
+              "RightOperand": "Low",
+              "Type": "Expression"
+            },
+            "Type": "If"
+          },
+          "Type": "BooleanExpression",
+          "inPage": false
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID26",
+      "SecondaryAttribute": "Sex assigned at birth?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "ChoiceOrder": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "Choices": {
+          "1": {
+            "Display": "Male"
+          },
+          "2": {
+            "Display": "Female"
+          },
+          "3": {
+            "Display": "Intersex"
+          },
+          "4": {
+            "Display": "Prefer not to say"
+          }
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "DataExportTag": "Sex",
+        "DataVisibility": {
+          "Hidden": false,
+          "Private": false
+        },
+        "Language": [],
+        "NextAnswerId": 1,
+        "NextChoiceId": 5,
+        "QuestionDescription": "Sex assigned at birth?",
+        "QuestionID": "QID26",
+        "QuestionText": "Sex assigned at birth?",
+        "QuestionText_Unsafe": "",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID50",
+      "SecondaryAttribute": "Simone the Science Synthesizer In a bustling research hub, Simone the Science Synthesizer, a gene...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<div class=\"trust-content-container\">\n<div class=\"avatar\"><img alt=\"Author Avatar\" src=\"https:\/\/uwaterloo.ca1.qualtrics.com\/CP\/Graphic.php?IM=IM_3ksWQv7c4Ruqzae\"><\/div>\n\n<div class=\"author-description\">\n<h2>Simone the Science Synthesizer<\/h2>\n\n<p>In a bustling research hub, Simone the Science Synthesizer, a generative AI science communicator, eagerly sifts through mountains of scientific data. With a touch of curiosity, Simone delves into complex research papers, unraveling their mysteries. It crafts engaging summaries, translating jargon into captivating narratives that resonate with diverse audiences. Simone pauses thoughtfully, ensuring each word is clear and impactful. Researchers smile, feeling understood as Simone presents visuals that bring their findings to life. Simone\u2019s gentle hum fills the room, a comforting presence dedicated to making science accessible. It seems almost alive, a tireless partner in the quest to share knowledge with the world.<\/p>\n<\/div>\n\n<div class=\"blog-post-content\">\n<h1>Revolutionary New Medication Shows Promising Results in Recent Study<\/h1>\n\n<p>Exciting news is emerging from the Horizon Medical Institute, where researchers have unveiled promising results for a new medication named <b>Velocerin<\/b>. This innovative drug targets inflammatory conditions such as rheumatoid arthritis and inflammatory bowel disease, showing significant potential to improve patients' lives.<\/p>\n\n<p>Velocerin works by specifically inhibiting the TNF-alpha protein, a key player in the inflammation process. Unlike traditional treatments that often cause broad, undesirable side effects, Velocerin's targeted approach allows it to reduce inflammation more effectively and with greater safety.<\/p>\n\n<p>The study involved over 1,000 participants who received either Velocerin or a placebo over six months. The results were compelling: those on Velocerin experienced a <b>60% reduction in symptoms<\/b>, compared to a <b>25% reduction<\/b> in the placebo group. Additionally, participants reported substantial improvements in their quality of life, citing reduced pain and enhanced mobility. Importantly, the drug was well-tolerated, with only mild side effects such as headaches and fatigue reported by a small number of users.<\/p>\n\n<p>For individuals living with chronic inflammatory conditions, Velocerin offers hope for a future with better symptom management and fewer side effects. While these findings are encouraging, further trials are necessary to confirm the drug's efficacy and safety on a larger scale. As research progresses, Velocerin stands out as a potential breakthrough in the treatment of inflammatory diseases, promising a brighter, healthier future for many.<\/p>\n<\/div>\n<\/div>",
+        "DefaultChoices": false,
+        "DataExportTag": "Medium",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Simone the Science Synthesizer In a bustling research hub, Simone the Science Synthesizer, a gene...",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID50",
+        "QuestionJS": "Qualtrics.SurveyEngine.addOnload(function()\n{\n\t\/*Place your JavaScript here to run when the page loads*\/\n\n});\n\nQualtrics.SurveyEngine.addOnReady(function()\n{\n\tlet loop_count = parseInt(\"${lm:\/\/CurrentLoopNumber}\");\n\tQualtrics.SurveyEngine.setEmbeddedData('BothLoop', loop_count);\n\tpauseBeforeNext(15000);\n});\n\nQualtrics.SurveyEngine.addOnUnload(function()\n{\n\t\/*Place your JavaScript here to run when the page is unloaded*\/\n\n});",
+        "DisplayLogic": {
+          "0": {
+            "0": {
+              "Description": "<span class=\"ConjDesc\">If<\/span> <span class=\"LeftOpDesc\">Condition<\/span> <span class=\"OpDesc\">Is Equal to<\/span> <span class=\"RightOpDesc\"> Medium <\/span>",
+              "LeftOperand": "Condition",
+              "LogicType": "EmbeddedField",
+              "Operator": "EqualTo",
+              "RightOperand": "Medium",
+              "Type": "Expression"
+            },
+            "Type": "If"
+          },
+          "Type": "BooleanExpression",
+          "inPage": false
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID3",
+      "SecondaryAttribute": "Study Title:\u00a0Perceptions of Communicated Information Faculty Supervisor:\u00a0Jonathan Fugelsang, PhD,.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Choices": {
+          "1": {
+            "Display": "I agree to participate."
+          },
+          "2": {
+            "Display": "I do not agree to participate."
+          }
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "DataExportTag": "ConsentForm",
+        "DataVisibility": {
+          "Hidden": false,
+          "Private": false
+        },
+        "DefaultChoices": false,
+        "GradingData": [],
+        "Language": [],
+        "NextAnswerId": 1,
+        "NextChoiceId": 3,
+        "QuestionDescription": "Study Title:\u00a0Perceptions of Communicated Information Faculty Supervisor:\u00a0Jonathan Fugelsang, PhD,...",
+        "QuestionID": "QID3",
+        "QuestionText": "<b><span style=\"font-size:12.0pt\"><span style=\"line-height:115%\"><span style=\"font-family:&quot;Aptos&quot;,sans-serif\">Study Title:<\/span><\/span><\/span><\/b><span style=\"font-size:12.0pt\"><span style=\"line-height:115%\"><span style=\"font-family:&quot;Aptos&quot;,sans-serif\">&nbsp;Perceptions of Communicated Information<br>\n<b>Faculty Supervisor:<\/b>&nbsp;Jonathan Fugelsang, PhD, Department of Psychology, University of Waterloo. Phone:&nbsp;+1-XXX-XXX-XXXX, Email: researcher@example.edu<br>\n<b>Student Investigator:<\/b>&nbsp;Caroline Simpson, Department of Psychology, University of Waterloo. Email: researcher@example.edu<br>\n<br>\nThis letter explains what the study is about, possible risks and benefits, and your rights as a research participant. You may print\/save a copy for your records. If you do not understand something in the letter, please contact one of the investigators named above before consenting to participate.<br>\n<br>\n<b>What is the study about?<\/b><br>\nYou are invited to participate in an undergraduate research study about perceptions of communicated information. The purpose of the study is to find out what impacts perception of information communicated through written content. This is important because we live in a world where more communication is happening asynchronously through online media and perceptions can impact knowledge sharing.<br>\n<br>\n<b>What does participation involve?<\/b><br>\nParticipation in the study will consist of an online anonymous questionnaire that takes approximately 15 minutes. You will first be asked to read descriptions of the author of a blog post, followed by the blog post itself. You will then be asked some questions about the author, the content, and your perceptions of both. You will also be asked a series of questions related to your technology use. Finally, you will be asked some demographic questions (i.e. age, education level, gender, sex, and English as a first language) which will be used to describe the characteristics of participants in this study as well as to examine differences and trends across these characteristics.<br>\n<br>\n<b>Who may participate in the study?<\/b><br>\nTo participate in the study, you need to be fluent in English.<br>\n<br>\n<b>Is participation in the study voluntary?<\/b><br>\nYour participation in this study is voluntary. You may decline to answer any question(s) you prefer not to answer by skipping to the next question and may stop participating at any time by not submitting your responses and closing your web browser.&nbsp;Once data has been collected, you may request your data be removed from the study up until 30 days from the day of your participation by contacting one of the researchers above with your unique completion code.<br>\n<br>\n<b>Will I receive anything for participating in the study?<\/b><br>\nIf you participate in this study, you will receive $2.00 USD. If you decide to stop participating early, please click through to the end to receive credit.<br>\n<br>\n<b>What are the possible benefits of the study?<\/b><br>\nParticipation in this study will not provide any personal benefit to you. Data from this study may contribute to theoretical knowledge about cognition and how our brains work.<br>\n<br>\n<b>What are the risks associated with the study?<\/b><br>\nThere are no known or anticipated risks associated with participation in this study. If a question or the topic makes you uncomfortable, you can choose not to provide a response.<br>\n<br>\n<b>How is data collected, stored, and protected?<\/b><br>\nYour identity will be confidential. Furthermore, because the interest of this study is in the average responses of the entire group of participants, you will not be identified individually in any way in any written reports of this research.<br>\n<br>\nThis survey is hosted by Qualtrics, which has multiple safeguards in place, although no Internet transmission is ever fully secure. Please Note: We do not collect or use internet protocol (IP) addresses or other information which could link your participation to your computer or electronic device.<br>\n<br>The collected research, with identifying information removed, data will be securely stored on secure University of Waterloo Servers or as needed, on encrypted external drives, for a minimum of seven years, and will be accessible to members of the research team only. <br>\n<br>\nThe data that you provide in this study may be submitted to an online repository and \/ or journal (i.e., the data may be publicly available). These data will be completely deidentified\/anonymized prior to submission and will be presented in aggregate form in publications. This process is integral to the research process as it allows other researchers to verify results and avoid duplicating research. Though the data is posted for the purpose listed, other individuals may access these data by accessing the open access repository. Although the dataset without identifiers may be shared publicly, your identity will always remain confidential. If you do not want to have your data used in this manner, do not consent to participate in this study.<br>\n<br>\n<b>Has the study received ethics clearance?<\/b><br>\n<br>\nThis study has been reviewed and received ethics clearance through a University of Waterloo Research Ethics Board (REB [#XXXXX]) If you have questions for the Board, contact the Office of Research Ethics, toll-free at +1-XXX-XXX-XXXX (Canada and USA), +1-XXX-XXX-XXXX, or&nbsp;<a href=\"mailto:researcher@example.edu\" style=\"color:#467886; text-decoration:underline\">researcher@example.edu<\/a>.<br>\n<br>\n<b>Who should I contact if I have questions regarding my participation in the study?<\/b><br>\nIf you have any questions about this study or need more information before you decide whether to participate, please contact one of the researchers named above.<br>\n<br>\n<em><b>By providing your consent, you are not waiving your legal rights or releasing the investigator(s) or involved institution(s) from their legal and professional responsibilities.<\/b><\/em><\/span><\/span><\/span><br>\n<br>\n<br>\n&nbsp;",
+        "QuestionText_Unsafe": "",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID83",
+      "SecondaryAttribute": "These questions are to ensure that you carefully read the author description and blog post. Pleas...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "These questions are to ensure that you carefully read the author description and blog post. Please answer these questions <strong>based on what you read<\/strong>.",
+        "DefaultChoices": false,
+        "DataExportTag": "Q31",
+        "QuestionID": "QID83",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "These questions are to ensure that you carefully read the author description and blog post. Pleas...",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID56",
+      "SecondaryAttribute": "Thinking of the author for the blog post\u00a0you\u2019ve just read, set the slider to the appropriate leve",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Thinking of <b>the author <\/b>for the blog post&nbsp;you\u2019ve just read, set the slider to the appropriate level between each pair of adjectives. Do not spend too much time on each item, answer with your first instinct.&nbsp;",
+        "DefaultChoices": false,
+        "DataExportTag": "GodspeedMETI",
+        "QuestionType": "Slider",
+        "Selector": "HSLIDER",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "CSSliderMin": 0,
+          "CSSliderMax": 100,
+          "GridLines": 0,
+          "SnapToGrid": false,
+          "NumDecimals": "0",
+          "ShowValue": false,
+          "CustomStart": true,
+          "NotApplicable": false,
+          "MobileFirst": true,
+          "SliderStartPositions": {
+            "1": 0.5006711409395973,
+            "2": 0.5006711409395973,
+            "3": 0.5006711409395973,
+            "4": 0.5006711409395973,
+            "5": 0.5006711409395973,
+            "6": 0.5006711409395973,
+            "7": 0.5006711409395973,
+            "8": 0.5006711409395973,
+            "9": 0.5006711409395973,
+            "10": 0.5006711409395973,
+            "11": 0.5006711409395973,
+            "12": 0.5006711409395973,
+            "13": 0.5006711409395973,
+            "14": 0.5006711409395973,
+            "15": 0.5004374453193351,
+            "16": 0.5004374453193351,
+            "17": 0.5004374453193351,
+            "18": 0.5004374453193351,
+            "19": 0.5004374453193351,
+            "20": 0.5004374453193351,
+            "21": 0.5021872265966754,
+            "22": 0.5004374453193351,
+            "23": 0.5004374453193351,
+            "24": 0.5004374453193351,
+            "25": 0.5004374453193351,
+            "26": 0.5004374453193351,
+            "28": 0.5004374453193351,
+            "29": 0.5004374453193351
+          }
+        },
+        "QuestionDescription": "Thinking of the author for the blog post\u00a0you\u2019ve just read, set the slider to the appropriate leve...",
+        "Choices": {
+          "1": {
+            "Display": "Fake | Natural"
+          },
+          "2": {
+            "Display": "Machinelike | Humanlike"
+          },
+          "3": {
+            "Display": "Unconscious | Conscious"
+          },
+          "4": {
+            "Display": "Artificial | Lifelike"
+          },
+          "5": {
+            "Display": "Dislike | Like"
+          },
+          "6": {
+            "Display": "Unfriendly | Friendly"
+          },
+          "7": {
+            "Display": "Unkind | Kind"
+          },
+          "8": {
+            "Display": "Unpleasant | Pleasant"
+          },
+          "9": {
+            "Display": "Awful | Nice"
+          },
+          "10": {
+            "Display": "Incompetent | Competent"
+          },
+          "11": {
+            "Display": "Ignorant | Knowledgeable"
+          },
+          "12": {
+            "Display": "Irresponsible | Responsible"
+          },
+          "13": {
+            "Display": "Unintelligent | Intelligent"
+          },
+          "14": {
+            "Display": "Foolish | Sensible"
+          },
+          "15": {
+            "Display": "Well Educated | Poorly Educated"
+          },
+          "16": {
+            "Display": "Professional | Unprofessional"
+          },
+          "17": {
+            "Display": "Experienced | Inexperienced"
+          },
+          "18": {
+            "Display": "Qualified | Unqualified"
+          },
+          "19": {
+            "Display": "Sincere | Insincere"
+          },
+          "20": {
+            "Display": "Honest | Dishonest"
+          },
+          "21": {
+            "Display": "Just | Unjust"
+          },
+          "22": {
+            "Display": "Fair | Unfair"
+          },
+          "23": {
+            "Display": "Moral | Immoral"
+          },
+          "24": {
+            "Display": "Ethical | Unethical"
+          },
+          "25": {
+            "Display": "Responsible | Irresponsible"
+          },
+          "26": {
+            "Display": "Considerate | Inconsiderate"
+          },
+          "28": {
+            "Display": "Set the slider to the far right |"
+          },
+          "29": {
+            "Display": "Set the slider to the far left |"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "28",
+          "29"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 30,
+        "NextAnswerId": 1,
+        "Labels": [],
+        "QuestionID": "QID56",
+        "QuestionJS": "Qualtrics.SurveyEngine.addOnload(function()\n{\n\t\/*Place your JavaScript here to run when the page loads*\/\n\n});\n\nQualtrics.SurveyEngine.addOnReady(function()\n{\n\tadjustSliderLabels()\n\n});\n\nQualtrics.SurveyEngine.addOnUnload(function()\n{\n\t\/*Place your JavaScript here to run when the page is unloaded*\/\n\n});",
+        "Randomization": {
+          "Advanced": null,
+          "TotalRandSubset": "",
+          "Type": "All"
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID76",
+      "SecondaryAttribute": "Thinking of the blog post about the new drug Velocerin, that you\u2019ve just read, rate each of the f.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Thinking of <strong>the blog post about the new drug Velocerin<\/strong>, that you\u2019ve just read, rate each of the following statements on a scale from \"Strongly disagree\" to \"Strongly agree\".&nbsp;Do not think too much about each statement, answer with your first instinct.",
+        "DefaultChoices": false,
+        "DataExportTag": "TrustBehaviour",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "TextPosition": "inline",
+          "ChoiceColumnWidth": 25,
+          "RepeatHeaders": "all",
+          "WhiteSpace": "OFF",
+          "MobileFirst": true,
+          "Autoscale": {
+            "XScale": {
+              "Name": "agreeDisagree",
+              "Type": "likert",
+              "Reverse": false
+            }
+          }
+        },
+        "QuestionDescription": "Thinking of the blog post about the new drug Velocerin, that you\u2019ve just read, rate each of the f...",
+        "Choices": {
+          "1": {
+            "Display": "If I were to suffer from a relevant medical condition, I am likely to use Velocerin."
+          },
+          "3": {
+            "Display": "I would share the information in the article with a close friend or family member who may benefit from the medication described."
+          },
+          "4": {
+            "Display": "I believe the claims made about Velocerin in this article."
+          },
+          "5": {
+            "Display": "I do not have confidence in Velocerin based on what I have read."
+          },
+          "6": {
+            "Display": "The blog post is not trustworthy enough for me to share on social media, if I were a person who shares links on social media."
+          },
+          "8": {
+            "Display": "If I were suffering from a relevant medical condition, I would look into Velocerin more after reading this blog post."
+          },
+          "11": {
+            "Display": "I would ask the author of this blog post to summarize scientific content for me in the future."
+          },
+          "12": {
+            "Display": "I would read articles by the author of this blog post in the future if they were on a topic that was of interest to me."
+          },
+          "13": {
+            "Display": "After reading this blog post I have enough information to make an informed decision about Velocerin."
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "3",
+          "4",
+          "5",
+          "6",
+          "8",
+          "11",
+          "12",
+          "13"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 14,
+        "NextAnswerId": 22,
+        "Answers": {
+          "15": {
+            "Display": "Strongly disagree"
+          },
+          "16": {
+            "Display": "Disagree"
+          },
+          "17": {
+            "Display": "Somewhat disagree"
+          },
+          "18": {
+            "Display": "Neither agree nor disagree"
+          },
+          "19": {
+            "Display": "Somewhat agree"
+          },
+          "20": {
+            "Display": "Agree"
+          },
+          "21": {
+            "Display": "Strongly agree"
+          }
+        },
+        "AnswerOrder": [
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21"
+        ],
+        "ChoiceDataExportTags": false,
+        "QuestionID": "QID76",
+        "Randomization": {
+          "Advanced": null,
+          "TotalRandSubset": "",
+          "Type": "All"
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID74",
+      "SecondaryAttribute": "Thinking of the blog post you\u2019ve just read, rate each of the following adjectives from 1 (describ.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Thinking of <strong>the blog post<\/strong> you\u2019ve just read, rate each of the following adjectives from 1 (describes very poorly) to 5 (describes very well) indicating how well it describes the content you just read?&nbsp;<br>\nDo not spend too much time on each item, answer with your first instinct.",
+        "DefaultChoices": false,
+        "DataExportTag": "Appelman",
+        "QuestionID": "QID74",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "TextPosition": "inline",
+          "ChoiceColumnWidth": 25,
+          "RepeatHeaders": "none",
+          "WhiteSpace": "OFF",
+          "MobileFirst": true
+        },
+        "QuestionDescription": "Thinking of the blog post you\u2019ve just read, rate each of the following adjectives from 1 (describ...",
+        "Choices": {
+          "1": {
+            "Display": "accurate"
+          },
+          "2": {
+            "Display": "authentic"
+          },
+          "3": {
+            "Display": "believable"
+          },
+          "4": {
+            "Display": "well-written"
+          },
+          "5": {
+            "Display": "boring"
+          },
+          "6": {
+            "Display": "engaging"
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "Randomization": {
+          "Advanced": null,
+          "TotalRandSubset": "",
+          "Type": "All"
+        },
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 7,
+        "NextAnswerId": 13,
+        "Answers": {
+          "1": {
+            "Display": "1"
+          },
+          "9": {
+            "Display": "2"
+          },
+          "10": {
+            "Display": "3"
+          },
+          "11": {
+            "Display": "4"
+          },
+          "12": {
+            "Display": "5"
+          }
+        },
+        "AnswerOrder": [
+          "1",
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "ChoiceDataExportTags": false,
+        "ColumnLabels": [
+          {
+            "Display": "Describes very poorly",
+            "IsLabelDefault": false
+          },
+          {
+            "Display": "Describes very well",
+            "IsLabelDefault": false
+          }
+        ],
+        "RecodeValues": {
+          "1": "-2",
+          "9": "-1",
+          "10": "0",
+          "11": "1",
+          "12": "2"
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID28",
+      "SecondaryAttribute": "Was English your first language learned at home in childhood?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "ChoiceOrder": [
+          "1",
+          "2",
+          "3"
+        ],
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          },
+          "3": {
+            "Display": "Learned English concurrently with another language"
+          }
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "DataExportTag": "English",
+        "DataVisibility": {
+          "Hidden": false,
+          "Private": false
+        },
+        "Language": [],
+        "NextAnswerId": 1,
+        "NextChoiceId": 4,
+        "QuestionDescription": "Was English your first language learned at home in childhood?",
+        "QuestionID": "QID28",
+        "QuestionText": "Was English your first language learned at home in childhood?",
+        "QuestionText_Unsafe": "",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID53",
+      "SecondaryAttribute": "Welcome and thank you for taking the time to participate in this study. Before the study starts,...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Welcome and thank you for taking the time to participate in this study.<br>\n<br>\nBefore the study starts, please silence your phone and <strong>ensure you are free from distractions for the next 15 minutes<\/strong>.<br>\n<br>\nDuring the study, you will read <b>the description of an author and a blog post they have written<\/b>. After reading this you will be asked a series of questions.<br>\n<br>\nBe sure to <strong>read the author description and blog post carefully before continuing<\/strong>&nbsp;as you will not be able to go back to read them again.&nbsp;<br>\n<br>\n&nbsp;",
+        "DefaultChoices": false,
+        "DataExportTag": "WelcomeText",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Welcome and thank you for taking the time to participate in this study. Before the study starts,...",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID53"
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID12",
+      "SecondaryAttribute": "What was the author?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<strong>What was the author?<\/strong>",
+        "DefaultChoices": false,
+        "DataExportTag": "AgentTypeCheck",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What was the author?",
+        "Choices": {
+          "1": {
+            "Display": "A generative AI agent"
+          },
+          "2": {
+            "Display": "A human expert"
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2"
+        ],
+        "Randomization": {
+          "Advanced": null,
+          "TotalRandSubset": "",
+          "Type": "All"
+        },
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID12"
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID10",
+      "SecondaryAttribute": "What was the blog post that you read about?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<strong>What was the blog post that you read about?<\/strong>",
+        "DefaultChoices": false,
+        "DataExportTag": "TopicCheck",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What was the blog post that you read about?",
+        "Choices": {
+          "1": {
+            "Display": "A new medication"
+          },
+          "2": {
+            "Display": "A new streaming series"
+          },
+          "3": {
+            "Display": "A new style of bike"
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2",
+          "3"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID10",
+        "Randomization": {
+          "Advanced": null,
+          "TotalRandSubset": "",
+          "Type": "All"
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID71",
+      "SecondaryAttribute": "Which generative AI chatbots have you used?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Which generative AI chatbots have you used?",
+        "DefaultChoices": false,
+        "DataExportTag": "AIChatbotsUsed",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Which generative AI chatbots have you used?",
+        "Choices": {
+          "1": {
+            "Display": "ChatGPT"
+          },
+          "2": {
+            "Display": "Claude"
+          },
+          "3": {
+            "Display": "Gemini"
+          },
+          "4": {
+            "Display": "Copilot"
+          },
+          "5": {
+            "Display": "Grok"
+          },
+          "7": {
+            "Display": "Other"
+          },
+          "8": {
+            "Display": "None"
+          }
+        },
+        "ChoiceOrder": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "7",
+          "8"
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 9,
+        "NextAnswerId": 1,
+        "QuestionID": "QID71"
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID29",
+      "SecondaryAttribute": "Which languages do you speak fluently? (Check all that apply)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "Choices": {
+          "1": {
+            "Display": "English"
+          },
+          "2": {
+            "Display": "Mandarin"
+          },
+          "3": {
+            "Display": "Hindi"
+          },
+          "4": {
+            "Display": "Spanish"
+          },
+          "5": {
+            "Display": "French"
+          },
+          "6": {
+            "Display": "Arabic"
+          },
+          "7": {
+            "Display": "Bengali"
+          },
+          "8": {
+            "Display": "Portuguese"
+          },
+          "9": {
+            "Display": "Russian"
+          },
+          "10": {
+            "Display": "Urdu"
+          },
+          "11": {
+            "Display": "Other (please list)",
+            "TextEntry": "true"
+          },
+          "12": {
+            "Display": "Prefer not to say"
+          }
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "TextPosition": "inline"
+        },
+        "DataExportTag": "Languages",
+        "DataVisibility": {
+          "Hidden": false,
+          "Private": false
+        },
+        "DefaultChoices": false,
+        "GradingData": [],
+        "Language": [],
+        "NextAnswerId": 14,
+        "NextChoiceId": 13,
+        "QuestionDescription": "Which languages do you speak fluently? (Check all that apply)",
+        "QuestionID": "QID29",
+        "QuestionText": "Which languages do you speak fluently? (Check all that apply)",
+        "QuestionText_Unsafe": "",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        },
+        "Randomization": {
+          "Advanced": null,
+          "TotalRandSubset": "",
+          "Type": "None"
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID9",
+      "SecondaryAttribute": "Which of these was the name of the author for the blog post you read?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<strong>Which of these was the name of the author for the blog post you read?<\/strong>",
+        "DataExportTag": "AgentNameCheck",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Which of these was the name of the author for the blog post you read?",
+        "Choices": {
+          "1": {
+            "Display": "Simone the Science Synthesizer"
+          },
+          "2": {
+            "Display": "Dr. Simone Tran"
+          },
+          "3": {
+            "Display": "Orion"
+          },
+          "4": {
+            "Display": "Steven"
+          },
+          "5": {
+            "Display": "Bethany"
+          },
+          "6": {
+            "Display": "Science Communication AI"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          6,
+          5,
+          4
+        ],
+        "Randomization": {
+          "Advanced": null,
+          "TotalRandSubset": "",
+          "Type": "All"
+        },
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "RequestResponse",
+            "ForceResponseType": "RequestResponse",
+            "Type": "None"
+          }
+        },
+        "Language": [],
+        "NextChoiceId": 7,
+        "NextAnswerId": 1,
+        "QuestionID": "QID9"
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID73",
+      "SecondaryAttribute": "You missed some details, please carefully read the description of the author and the blog post be...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "You missed some details, <strong>please carefully read the description of the author and the blog post<\/strong> before continuing.&nbsp;",
+        "DefaultChoices": false,
+        "DataExportTag": "Q36",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "You missed some details, please carefully read the description of the author and the blog post be...",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID73"
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID19",
+      "SecondaryAttribute": "You must click the Next [--- ] button on this page to receive your unique completion code to get...",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<strong><span style=\"color:#e74c3c;\"><span style=\"font-size:19px;\">You must click the Next [---&gt;] button on this page to receive your unique completion code to get credit.<br>\nDo NOT close your browser yet.&nbsp;<\/span><\/span><br>\n<br>\nStudy Title:<\/strong>&nbsp;Perceptions of Communicated Information<br>\n<strong>Faculty Supervisor:<\/strong>&nbsp;Jonathan Fugelsang, PhD, Department of Psychology, University of Waterloo<br>\n<strong>Phone:<\/strong>&nbsp;+1-XXX-XXX-XXXX&nbsp;x47197, Email: researcher@example.edu<br>\n<strong>Student Investigator:<\/strong> Caroline Simpson, Department of Psychology, University of Waterloo. Email: researcher@example.edu<br>\n<br>\n<span style=\"font-size:11pt\"><span style=\"line-height:200%\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\"><span style=\"font-size:12.0pt\"><span style=\"line-height:200%\">Dear participant,<\/span><\/span><br>\n<br>\n<span style=\"font-size:12.0pt\"><span style=\"line-height:200%\">We appreciate your participation in our study and thank you for spending the time helping us with our research.&nbsp; The purpose of this post-study information page is to provide additional details about the study you just participated in.<\/span><\/span><br>\n<br>\n<b><span style=\"font-size:12.0pt\"><span style=\"line-height:200%\">About Today\u2019s Study:<\/span><\/span><\/b><br>\n<span style=\"font-size:12.0pt\"><span style=\"line-height:200%\">You were originally told that this study was designed to investigate what impacts perceptions of information communicated through written content.&nbsp; While we were indeed interested in studying perceptions of communication, the study objectives were more involved from what we originally explained to you.<\/span><\/span><\/span><\/span><\/span><br>\n<br>\n<br>\n<span style=\"font-size:12.0pt\"><span style=\"line-height:115%\"><span style=\"font-family:&quot;Aptos&quot;,sans-serif\">In this study, we are interested in how anthropomorphism \u2013 the attribution of human-like qualities \u2013 of a generative artificial intelligence source affects the level of trust in the content they generate.&nbsp; In other words, we wanted to see if changing the description and image of the author of a fictional blog post would change how trustworthy the author and content were perceived to be. This study is important because of the recent prevalence of generative AI sources and content, combined with past research has suggested that when machines are anthropomorphized, they are perceived as more trustworthy.&nbsp;Examining factors that potentially influence perception of trustworthiness can add to our theoretical understanding of cognition. Additionally, this work can inform appropriate use of anthropomorphism techniques in the technology and media industries.<br>\n<br>\nParticipants in this study were randomized into one of 3 conditions. They either read a description of an author that was a human expert (high anthropomorphism), an intentionally anthropomorphized generative AI agent (medium anthropomorphism), or a non-anthropomorphized generative AI agent (low anthropomorphism). You were in the&nbsp;<\/span><\/span><\/span>${e:\/\/Field\/Condition}<span style=\"font-size:12.0pt\"><span style=\"line-height:115%\"><span style=\"font-family:&quot;Aptos&quot;,sans-serif\"> anthropomorphism condition.&nbsp;<br>\n<br>\nThe reason we needed to use partial disclosure in this study was because we needed participants\u2019 behaviour and attitudes to be as natural as possible. We apologize again for not providing you with complete and accurate information about the purpose and objectives for this study, but we hope you understand why this was necessary. If you have questions about the use of partial disclosure in this study, please contact one of the researchers listed by email.<br>\n<br>\nSince this study involves some aspects that you were not told about before starting, it is very important that you not discuss your experiences with any other people who potentially could be in this study, until the completion of the study.&nbsp; If people come into the study knowing about our specific predictions, as you can imagine, it could influence their results, and the data we collect would not be usable.&nbsp; Also, if you print off a copy of this post-study information page, please do not make it available to others.<br>\n<br>\n<b>Confidentiality:<\/b><br>\nYour identity will be confidential. Furthermore, because the interest of this study is in the average responses of the entire group of participants, you will not be identified individually in any way in any written reports of this research. The data, with identifying information removed, will be kept for a period of at least 7 years following publication of the research, after which it will be deleted. The data will be securely stored to which only researchers associated with this study have access.<br>\n<br>\nDe-identified data related to your participation may be submitted to an online repository and \/ or journal (i.e., the data may be publicly available). These data will be completely deidentified\/anonymized prior to submission and will be presented in aggregate form in publications. This process is integral to the research process as it allows other researchers to verify results and avoid duplicating research. Though the data is posted for the purpose listed, other individuals may access these data by accessing the open access repository. Although the dataset without identifiers may be shared publicly, your identity will always remain confidential.<br>\n<br>\n<b>Data Storage:<\/b><br>\nThe research data will be securely stored on secure University of Waterloo Servers or as needed, on encrypted external drives, for a minimum of seven years, and will be accessible to members of the research team only. You may decide to withdraw from this study at any time by closing this webpage and may do so without loss of remuneration. Once data has been collected, you may request your data be removed from the study up until 30 days from the day of your participation by contacting one of the researchers listed above with your unique completion code.<br>\n&nbsp;<br>\n<b>Ethics clearance:<\/b><br>\nThis study has been reviewed and received ethics clearance through a University of Waterloo Research Ethics Board (REB [#XXXXX]). If you have questions for the Board, contact the Office of Research Ethics, toll-free at +1-XXX-XXX-XXXX (Canada and USA), +1-XXX-XXX-XXXX, or researcher@example.edu. For all other questions contact one of the researchers named above.<br>\n<br>\n<b>Questions:<\/b><br>\nIf you are interested in receiving more information regarding the results of this study, or would like a summary of the results, please reach out to the investigator indicating your interest, and when the study is completed, we will send you the information. In the meantime, if you have any questions about the study, please do not hesitate to contact the investigator by email.<br>\n<br>\nThank you again for your participation. Without the help of participants like you, important research in psychology would not be possible.<\/span><\/span><\/span><br>\n&nbsp;",
+        "QuestionJS": "Qualtrics.SurveyEngine.addOnload(function()\n{\n\t\/*Place your JavaScript here to run when the page loads*\/\n\n});\n\nQualtrics.SurveyEngine.addOnReady(function()\n{\n\t\/*Place your JavaScript here to run when the page is fully displayed*\/\n\tlet length = 12;\n\tlet result = '';\n    const characters = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';\n    const charactersLength = characters.length;\n    let counter = 0;\n    while (counter < length) {\n        result += characters.charAt(Math.floor(Math.random() * charactersLength));\n        counter += 1;\n    }\n\t\n\tQualtrics.SurveyEngine.setEmbeddedData('completion_code', result);\n    });\n\nQualtrics.SurveyEngine.addOnUnload(function()\n{\n\t\/*Place your JavaScript here to run when the page is unloaded*\/\n\n\n});",
+        "DefaultChoices": false,
+        "DataExportTag": "Debrief",
+        "QuestionID": "QID19",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "You must click the Next [--- ] button on this page to receive your unique completion code to get...",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1
+      }
+    },
+    {
+      "SurveyID": "SV_0Sy4z7UTkBM0ptI",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID84",
+      "SecondaryAttribute": "Your unique completion code is\u00a0 ${e:\/\/Field\/completion_code}",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Your unique completion code is&nbsp;<br \/>\n<br \/>\n<br \/>\n<strong><span style=\"font-size:26px;\">${e:\/\/Field\/completion_code}<\/span><\/strong>",
+        "DefaultChoices": false,
+        "DataExportTag": "Code",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Your unique completion code is\u00a0 ${e:\/\/Field\/completion_code}",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID84",
+        "QuestionJS": "Qualtrics.SurveyEngine.addOnload(function()\n{\n\t\/*Place your JavaScript here to run when the page loads*\/\n\n\n});\n\nQualtrics.SurveyEngine.addOnReady(function()\n{\n\t\n   \n\t\n    Qualtrics.SurveyEngine.addOnUnload(function()\n{\n\t\/*Place your JavaScript here to run when the page is unloaded*\/\n\n});"
+      }
+    }
+  ]
+}
